@@ -22,7 +22,7 @@ public class Conexion {
    // public Connection conectar(){
       //  try{
         //    Class.forName("com.mysql.jdbc.Driver");
-          //  conex = DriverManager.getConnection("jdbc:mysql://localhost/bd_x/","root","system");    
+          //  conex = DriverManager.getConnection("jdbc:mysql://localhost/BD_HISTORIALMEDICO/","root","system");    
  
         //}catch(Exception e){
           //  JOptionPane.showMessageDialog(null, "Error"+e);
@@ -30,7 +30,7 @@ public class Conexion {
         //return conex;
     //}
         
-       // String url="jdbc:mysql://localhost/bd_x";
+       // String url="jdbc:mysql://localhost/HISTORIALMEDICO";
         //String usuario="root";
         //String pass ="system";
         
@@ -45,7 +45,7 @@ public class Conexion {
     public static Connection GetConexion() throws ClassNotFoundException, SQLException{
     Connection conex=null;
         Class.forName("com.mysql.jdbc.Driver");
-        String url="jdbc:mysql://localhost/bd_x";
+        String url="jdbc:mysql://localhost/BD_HISTORIALMEDICO";
         String usuario="root";
         String pass ="system";
         conex =(Connection) DriverManager.getConnection(url,usuario,pass);    

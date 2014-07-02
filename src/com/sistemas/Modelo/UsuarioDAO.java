@@ -26,7 +26,7 @@ public class UsuarioDAO {
     String sql;
     public int validarUsuario(String usu, String pass){
         sql="SELECT *FROM Usuario WHERE usuario='"+usu
-                +"' AND password='"+pass+"'";
+                +"' AND pass='"+pass+"'";
         try {
             cx = Conexion.GetConexion();
             st = cx.createStatement();
